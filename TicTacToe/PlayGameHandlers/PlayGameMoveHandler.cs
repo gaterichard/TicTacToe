@@ -10,9 +10,11 @@ namespace TicTacToe.PlayGameHandlers
     public class PlayGameMoveHandler : PlayGameHandler
     {
         IMoveStrategy _moveStrategy;
-        public PlayGameMoveHandler(IMoveStrategy moveStrategy)
+        int _sleepDuration;
+        public PlayGameMoveHandler(IMoveStrategy moveStrategy, int sleepDuration)
         {
             _moveStrategy = moveStrategy;
+            _sleepDuration = sleepDuration;
         }
 
         public override void HandlePlayGameRequest(IGameDisplay display, IBoard board)
@@ -25,7 +27,7 @@ namespace TicTacToe.PlayGameHandlers
                 display.TurnMessage(turn);
                 _moveStrategy.Move(player, board);
                 display.DrawBoard(board);
-                Thread.Sleep(1000);
+                Thread.Sleep(_sleepDuration);
             } while (board.IsInPlay());
 
             if (_successor != null)

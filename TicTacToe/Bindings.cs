@@ -19,7 +19,7 @@ namespace TicTacToe
             Bind<PlayGameHandler>().ToMethod(x =>
             {
                 var playGameWelcomeHandler = new PlayGameWelcomeHandler();
-                var playGameMoveHandler = new PlayGameMoveHandler(new RandomMoveStrategy());
+                var playGameMoveHandler = new PlayGameMoveHandler(new RandomMoveStrategy(), 1000);
                 playGameWelcomeHandler.SetSuccessor(playGameMoveHandler);
                 playGameMoveHandler.SetSuccessor(new PlayGameResultHandler());
                 return playGameWelcomeHandler;

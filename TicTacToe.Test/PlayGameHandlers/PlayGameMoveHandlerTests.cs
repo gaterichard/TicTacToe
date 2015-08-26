@@ -32,7 +32,7 @@ namespace TicTacToe.Test.PlayGameHandlers
                                                       .Returns(false);
                                                       
             _successor = new Mock<PlayGameHandler>();
-            _playGameMoveHandler = new PlayGameMoveHandler(_moveStrategy.Object);
+            _playGameMoveHandler = new PlayGameMoveHandler(_moveStrategy.Object, 1);
             _playGameMoveHandler.SetSuccessor(_successor.Object);
         }
 
