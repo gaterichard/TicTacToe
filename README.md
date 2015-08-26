@@ -1,5 +1,6 @@
 #TIC-TAC-TOE
-### Author: Richard Gate. Console application + 27 unit tests + a couple of BDD tests (for demonstration)
+**Author**: Richard Gate.
+Console application + 27 unit tests + a couple of BDD tests (for demonstration)
 	
 Randomly played Tic-Tac-Toe game written in C#
 
