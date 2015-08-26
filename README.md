@@ -36,7 +36,7 @@ IMoveStrategy
 - Represents the interface to making a move.
 
 RandomMove
-- The logic for a random move by a player with a one second wait.
+- The logic for a random move by a player.
 
 IGameDisplay
 - Interface for displaying the board and welcome message.
