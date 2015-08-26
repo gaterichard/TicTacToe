@@ -39,10 +39,10 @@ RandomMove
 - The logic for a random move by a player.
 
 IGameDisplay
-- Interface for displaying the board and welcome message.
+- Interface for displaying the board and various messages and prompts.
 
 ConsoleGameDisplay
-- Console Game Display. This is used to render the board to a console output.
+- Console Game Display. This is used to render information to a console output.
 
 Board
 - represents the state of the game board. The board internally holds a char array.
