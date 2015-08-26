@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicTacToe", "TicTacToe\TicT
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CA5A65C1-E5E2-4217-816E-2479E2C02C03}"
 	ProjectSection(SolutionItems) = preProject
-		ReadMe.txt = ReadMe.txt
+		README.md = README.md
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicTacToe.Test", "TicTacToe.Test\TicTacToe.Test.csproj", "{9BF69105-1C75-4228-B566-1815B26275CB}"

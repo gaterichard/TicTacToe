@@ -1,24 +1,26 @@
-======================================================
-
-      TIC-TAC-TOE
+#TIC-TAC-TOE
 	
-  Randomly played Tic-Tac-Toe game written in C#
-
-=======================================================
+Randomly played Tic-Tac-Toe game written in C#
 
 Tic-Tac-Toe game in C#. Uses Ninject IoC, SpecFlow, nUnit and MOQ.
 
-The main flow of the game, of each player taking a turn is encapulsated within the GameEngine.
+###Overview
 
-IMoveStrategy interface allows the implementation of various movement implementations. It makes use of the strategy pattern to encapsulate the moving logic.
-The spec indicates a player should make a random move including a 1 second wait. This is encapulated in the RandonOneSecondMoveStrategy
+The main flow of the game, of each player taking a turn is encapulsated within the **GameEngine**.
+The game engine makes use of the *chain of responsibility pattern*. This allows us to segregate the workflow of the application and individually test components.
+http://www.dofactory.com/net/chain-of-responsibility-design-pattern
 
-The Board class represents the board, current played turns and holds logic for calculating the boards state - inplay, win or draw.
+**IMoveStrategy** interface allows the implementation of *various movement implementations*. It makes use of the strategy pattern to encapsulate the moving logic.
+http://www.dofactory.com/net/strategy-design-pattern
+Other strategies and AI could be built here.
+The spec indicates a player should make a random move. This is encapulated in the **RandonMoveStrategy**
+
+The **Board** class represents the board, current played turns and holds logic for calculating the boards state - *inplay, win or draw*.
 Internally the board holds an array of characters to represent the turns played.
 
-The GameEngine renders the output to the screen using the IGameDisplay interface. I've provided a ConsoleGameDisplay implementation to meet the spec.
+The **GameEngine** renders the output to the screen using the IGameDisplay interface. I've provided a ConsoleGameDisplay implementation to meet the spec.
 
-Classes:
+###Classes:
 
 GameEngine
 - Represents the workflow of the game, 1. Prompt user to start a game. 2. Render the board. 3. Have moves played until the game is resolved.
@@ -29,11 +31,10 @@ GameEngineTests
 - Tests moves are made until the board is resolved.
 - Tests a game output is displayed.
 
-
-IMove
+IMoveStrategy
 - Represents the interface to making a move.
 
-RandomOneSecondMove
+RandomMove
 - The logic for a random move by a player with a one second wait.
 
 
@@ -66,3 +67,9 @@ board[3] == board[4] && board[4] == board[5]
 BoardTests
 - Unit tests for the board class. Tests all the winning conditions, draw and inplay conditions. Tests that the board can be updated and that an illegal move exception is thrown when an invalid move is made.
 
+###Testing
+
+27 Unit tests are in the Test project, and were created using TDD. This suite tests the full app including functionality such as the board and workflow such as the requirement of new games being
+ offered etc.
+
+For completenes I've included two BDD tests to demonstrate BDD functionality.
