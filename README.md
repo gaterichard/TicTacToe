@@ -1,4 +1,5 @@
 #TIC-TAC-TOE
+## Author: Richard Gate. Console application + 27 unit tests + a couple of BDD tests (for demonstration)
 	
 Randomly played Tic-Tac-Toe game written in C#
 
@@ -66,4 +67,4 @@ board[3] == board[4] && board[4] == board[5]
 27 Unit tests are in the Test project, and were created using TDD. This suite tests the full app including functionality such as the board and workflow such as the requirement of new games being
  offered etc.
 
-For completenes I've included two BDD tests to demonstrate BDD functionality.
+For completenes I've included two BDD tests to demonstrate BDD functionality. These tests were already included as part of the nUnit suite of tests but are there simply demonstrate how the test the application using BDD.
