@@ -9,14 +9,14 @@ Tic-Tac-Toe game in C#. Uses Ninject IoC, SpecFlow, nUnit and MOQ.
 
 ###Overview
 
-The main flow of the game, of each player taking a turn is encapulsated within the **GameEngine**.
+The main flow of the game, of each player taking a turn is encapsulated within the **GameEngine**.
 The game engine makes use of the *chain of responsibility pattern*. This allows us to segregate the workflow of the application and individually test components.
 http://www.dofactory.com/net/chain-of-responsibility-design-pattern
 
 **IMoveStrategy** interface allows the implementation of *various movement implementations*. It makes use of the strategy pattern to encapsulate the moving logic.
 http://www.dofactory.com/net/strategy-design-pattern
 Other strategies and AI could be built here.
-The spec indicates a player should make a random move. This is encapulated in the **RandonMoveStrategy**
+The spec indicates a player should make a random move. This is encapsulated in the **RandonMoveStrategy**
 
 The **Board** class represents the board, current played turns and holds logic for calculating the boards state - *inplay, win or draw*.
 Internally the board holds an array of characters to represent the turns played.
@@ -69,4 +69,4 @@ board[3] == board[4] && board[4] == board[5]
 27 Unit tests are in the Test project, and were created using TDD. This suite tests the full app including functionality such as the board and workflow such as the requirement of new games being
  offered etc.
 
-For completenes I've included two BDD tests to demonstrate BDD functionality. These tests were already included as part of the nUnit suite of tests but are there simply demonstrate how the test the application using BDD.
+For completeness I've included two BDD tests to demonstrate BDD functionality. These tests were already included as part of the nUnit suite of tests but are there simply demonstrate how the test the application using BDD.
