@@ -1,4 +1,6 @@
-﻿Feature: MoveFeature
+﻿# This is only here to sample BDD. The unit tests produced using TDD encapuslate the testing for this application.
+
+Feature: MoveFeature
 	In order to progress the game
 	As a player
 	I want to be able to make a move

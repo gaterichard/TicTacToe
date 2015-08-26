@@ -18,7 +18,7 @@ namespace TicTacToe.BDD
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "1.9.0.77")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [TechTalk.SpecRun.FeatureAttribute("MoveFeature", Description="In order to progress the game\nAs a player\nI want to be able to make a move", SourceFile="MoveFeature.feature", SourceLine=0)]
+    [TechTalk.SpecRun.FeatureAttribute("MoveFeature", Description="In order to progress the game\nAs a player\nI want to be able to make a move", SourceFile="MoveFeature.feature", SourceLine=2)]
     public partial class MoveFeatureFeature
     {
         
@@ -62,35 +62,35 @@ namespace TicTacToe.BDD
             testRunner.CollectScenarioErrors();
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("Win the game", SourceLine=5)]
+        [TechTalk.SpecRun.ScenarioAttribute("Win the game", SourceLine=7)]
         public virtual void WinTheGame()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Win the game", ((string[])(null)));
-#line 6
-this.ScenarioSetup(scenarioInfo);
-#line 7
- testRunner.Given("the board contains an \'X\' in cell 0", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 8
- testRunner.And("the board contains an \'X\' in cell 1", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+this.ScenarioSetup(scenarioInfo);
 #line 9
- testRunner.When("player \'X\' makes a move into cell 2", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.Given("the board contains an \'X\' in cell 0", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 10
+ testRunner.And("the board contains an \'X\' in cell 1", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 11
+ testRunner.When("player \'X\' makes a move into cell 2", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 12
  testRunner.Then("player \'X\' should win the game.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("Illegal move", SourceLine=11)]
+        [TechTalk.SpecRun.ScenarioAttribute("Illegal move", SourceLine=13)]
         public virtual void IllegalMove()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Illegal move", ((string[])(null)));
-#line 12
-this.ScenarioSetup(scenarioInfo);
-#line 13
- testRunner.Given("the board contains an \'X\' in cell 0", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 14
- testRunner.When("player \'O\' makes a move into cell 0", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+this.ScenarioSetup(scenarioInfo);
 #line 15
+ testRunner.Given("the board contains an \'X\' in cell 0", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 16
+ testRunner.When("player \'O\' makes a move into cell 0", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 17
  testRunner.Then("the move is invalid", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
