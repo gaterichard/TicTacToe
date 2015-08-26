@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicTacToe", "TicTacToe\TicTacToe.csproj", "{C65E35FC-9956-4992-A1B1-BA10455F9961}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CA5A65C1-E5E2-4217-816E-2479E2C02C03}"
+	ProjectSection(SolutionItems) = preProject
+		ReadMe.txt = ReadMe.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicTacToe.Test", "TicTacToe.Test\TicTacToe.Test.csproj", "{9BF69105-1C75-4228-B566-1815B26275CB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicTacToe.BDD", "TicTacToe.BDD\TicTacToe.BDD.csproj", "{9D988443-649B-4CEB-8EF7-F3EE198C16F9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{054CDEC5-3E08-4556-924C-421E84F4DEB8}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C65E35FC-9956-4992-A1B1-BA10455F9961}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C65E35FC-9956-4992-A1B1-BA10455F9961}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C65E35FC-9956-4992-A1B1-BA10455F9961}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C65E35FC-9956-4992-A1B1-BA10455F9961}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BF69105-1C75-4228-B566-1815B26275CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BF69105-1C75-4228-B566-1815B26275CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BF69105-1C75-4228-B566-1815B26275CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BF69105-1C75-4228-B566-1815B26275CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D988443-649B-4CEB-8EF7-F3EE198C16F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D988443-649B-4CEB-8EF7-F3EE198C16F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D988443-649B-4CEB-8EF7-F3EE198C16F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D988443-649B-4CEB-8EF7-F3EE198C16F9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
